@@ -12,6 +12,10 @@
     <title>Sviluppo di una pagina web - Blog Epicode</title>
     <link rel="stylesheet" href="assets/reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,177 +23,191 @@
         <div>
           <img src="assets/logo.svg" alt="logo epicode" />
         </div>
+        <nav>
+          <div id="menù">
+            <div>
+              <h1>Epicode - Il blog dei developers</h1>
+            </div>
+            <div>
+              <p>⇒Home⇐</p>
+            </div>
+            <div>
+              <p>⇒Articoli⇐</p>
+            </div>
+            <div>
+              <p>⇒Lavora con noi⇐</p>
+            </div>
+          </div>
+        </nav>
       </header>
     </div>
-    <nav>
-      <div id="menù">
-        <div>
-          <p>Home</p>
+    <div id="bianco">
+      <main>
+        <section>
+          <h2>Come creare un template per i post</h2>
+          <p>
+            <i class="fas fa-edit" style="color: #a8a8a8">di Mario Rossi - </i>
+            <i class="fas fa-clock" style="color: #a8a8a8"
+              >pubblicato il 25-10-2020</i
+            >
+          </p>
+          <p>
+            La prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando le parti comuni da applicare a tutte le pagine Le
+            varie aree saranno quindi suddivise in:
+          </p>
+          <ul>
+            <li>Contenuti di intestazione del tag &lt;cheader&gt;</li>
+            <li>
+              Contenuti centrali variabili del tag &lt;main&gt; (corpo
+              principale)
+            </li>
+            <li>
+              Contenuti di fine pagina comuni, da inserire nel tag
+              &lt;footer&gt;
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>Formattazione del codice</h4>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare il markup assegnando ad ogni specifico testo il tag
+              appropriato
+            </li>
+            <li>
+              Scrivere I'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+          <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressoché totale.
+          </p>
+        </section>
+        <section>
+          <table>
+            <caption>
+              Diffusione del CSS
+            </caption>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browsers</th>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <p>
+            Un test di validazione potrà essere fatto tramite il
+            <a href="#" title="tool online" target="_blank" rel="nofollow">
+              tool online</a
+            >
+            dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+            raggiunto il nostro obiettivo ad essere stati dei veri developers
+            come loro:
+          </p>
+
+          <iframe
+            width="410"
+            height="200"
+            src="https://www.youtube.com/embed/_mvNVQ2pjlI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </main>
+
+      <aside>
+        <div id="ns">
+          <h3>NOVITÀ</h3>
+          <p>
+            Vuoi rimanere aggiornato su altre novità del blog? Inscriviti alla
+            nostra newsletter:
+          </p>
+          <div>
+            <input type="email" placeholder="inserisci l'email" name="email" />
+
+            <input id="ins" type="submit" value="Inscriviti!" />
+          </div>
         </div>
         <div>
-          <p>Articoli</p>
+          <h3>Articoli correlati</h3>
+
+          <p>
+            <a
+              href="#"
+              title="validare il codice html"
+              target="_blank"
+              rel="nofollow"
+            >
+              Validare il codice HTML </a
+            ><br />
+            <i class="fas fa-tag" style="color: #000000">Categoria: develop</i
+            ><br />
+            Data: 18-9-2020<br />
+          </p>
+          <p>
+            <a
+              href="#"
+              title="correggere la sintassi"
+              target="_blank"
+              rel="nofollow"
+              >Correggere la sintassi </a
+            ><br />
+            <i class="fas fa-tag" style="color: #000000">Categoria: develop</i
+            ><br />
+            Data: 16-9-2020<br />
+          </p>
+          <p>
+            <a
+              href="#"
+              title="meno kb nella pagina"
+              target="_blank"
+              rel="nofollow"
+              >Meno Kb nella pagina</a
+            ><br />
+            <i class="fas fa-tag" style="color: #000000"
+              >Categoria: ottimizzazione</i
+            ><br />
+            Data: 30-9-2020
+          </p>
         </div>
-        <div>
-          <p>Lavora con noi</p>
-        </div>
-      </div>
-    </nav>
-    <div>
-      <h1>Epicode - Il blog dei developers</h1>
+      </aside>
     </div>
-    <main>
-      <section>
-        <h2>
-          Come creare un template per i post di Mario Rossi - pubblicato il
-          25-10-2020
-        </h2>
-        <p>
-          La prima cosa da fare è suddividere in blocchi logici la pagina,
-          identificando le parti comuni da applicare a tutte le pagine Le varie
-          aree saranno quindi suddivise in:
-        </p>
-        <ul>
-          <li>Contenuti di intestazione del tag &lt;cheader&gt;</li>
-          <li>
-            Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)
-          </li>
-          <li>
-            Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h4>Formattazione del codice</h4>
-        <p>
-          Il testo dell'articolo dovrà essere formattato per identificare tutte
-          le parti da selezionare con i CSS. Perciò i passi saranno:
-        </p>
-        <ol>
-          <li>
-            Progettare il markup assegnando ad ogni specifico testo il tag
-            appropriato
-          </li>
-          <li>
-            Scrivere I'HTML dai tag esterni a quelli interni e dall'alto verso
-            il basso
-          </li>
-          <li>Applicare gli stili CSS</li>
-        </ol>
-        <p>
-          L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
-          la diffusione pressoché totale.
-        </p>
-      </section>
-      <section>
-        <table>
-          <caption>
-            Diffusione del CSS
-          </caption>
-          <tr>
-            <th>Anno</th>
-            <th>% di utilizzo</th>
-            <th>Supporto browsers</th>
-          </tr>
-          <tr>
-            <td>2000</td>
-            <td>20%</td>
-            <td>17%</td>
-          </tr>
-          <tr>
-            <td>2002</td>
-            <td>35%</td>
-            <td>22%</td>
-          </tr>
-          <tr>
-            <td>2004</td>
-            <td>45%</td>
-            <td>42%</td>
-          </tr>
-          <tr>
-            <td>2008</td>
-            <td>80%</td>
-            <td>51%</td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td>100%</td>
-            <td>76%</td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <p>
-          Un test di validazione potrà essere fatto tramite il
-          <a href="#" title="tool online" target="_blank" rel="nofollow">
-            tool online</a
-          >
-          dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto
-          il nostro obiettivo ad essere stati dei veri developers come loro:
-        </p>
-
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/_mvNVQ2pjlI"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </main>
-    <hr />
-    <aside>
-      <div id="ns">
-        <p>
-          Vuoi rimanere aggiornato su altre novità del blog? Inscriviti alla
-          nostra newsletter:
-        </p>
-        <div>
-          <label for="email">Inserisci l'email</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div>
-          <input id="ins" type="submit" value="Inscriviti!" />
-        </div>
-      </div>
-      <div>
-        <h3>Articoli correlati</h3>
-
-        <p>
-          <a
-            href="#"
-            title="validare il codice html"
-            target="_blank"
-            rel="nofollow"
-          >
-            Validare il codice HTML </a
-          ><br />
-          Categoria: develop<br />
-          Data: 18-9-2020<br />
-          <a
-            href="#"
-            title="correggere la sintassi"
-            target="_blank"
-            rel="nofollow"
-            >Correggere la sintassi </a
-          ><br />
-          Categoria: develop<br />
-          Data: 16-9-2020<br />
-          <a
-            href="#"
-            title="meno kb nella pagina"
-            target="_blank"
-            rel="nofollow"
-            >Meno Kb nella pagina</a
-          ><br />
-          Categoria: ottimizzazione<br />
-          Data: 30-9-2020
-        </p>
-      </div>
-    </aside>
-    <hr />
     <footer id="footer">
       Blog Epicode &copy;2023
       <br />
